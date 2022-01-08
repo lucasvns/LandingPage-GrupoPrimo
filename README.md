@@ -1,1 +1,1 @@
-# Landing Page criada para vaga de Desenvolvedor FullStack no Grupo Primo
+# Landing Page criada para vaga de Desenvolvedor Frontend no Grupo Primo
