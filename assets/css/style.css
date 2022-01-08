@@ -1,0 +1,1243 @@
+/* Import fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: Open_24;
+    src: url(../font/open_24.ttf);
+    font-weight: normal;
+  }
+  
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* General */
+
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+.title{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btnCallToAction{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    background: linear-gradient(315deg, #FBB03B 0.09%, #F89935 14.15%, #F57E2E 35.36%, #F36A28 56.76%, #F15E25 78.25%, #F15A24 100%);
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding:17px 60px;
+}
+
+.btnCallToAction:hover{
+    color: #FFFF
+}
+
+.orangeText{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F15A24;
+}
+
+.orangeBorder{
+    background: #F15A24;
+    text-align: center;
+    height: 4px;
+    width: 136px;
+    display: flex; 
+    margin: 20px auto 0 auto;
+    /* margin-top: 20px; */
+}
+
+.personDescription{
+    padding-top: 48px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.personDescription strong{
+    font-weight: 700;
+}
+
+.personHolder{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+/* Header Section */
+
+#headerSection{
+    min-height: 84px;
+    background: #000000;
+    padding:16px 0;
+}
+
+.headerText{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    display: flex;
+    margin: auto;
+}
+
+#counterDiv{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.counterHolder{
+    display: flex;
+    float: right;
+    gap: 40px;
+}
+
+.numberCounter{
+    font-family: Open_24;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto; 
+    gap: 16px;
+}
+
+.dotsCounter{
+    display: flex;
+    margin: auto;
+}
+
+.textCounter{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+/* Banner section */
+
+#bannerSection{
+    background: url(../img/bg_header.png) center;
+    background-size: cover;
+    min-height: 931px;
+    padding:76px 0px 175px 0px;
+}
+
+.bannerGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#bannerSection .counterHolder{
+    display: none;
+}
+
+#bannerMobile{
+    display: none;
+}
+
+.subTitleBanner{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FBB03B;
+}
+
+.bannerText{
+    text-align: center;
+}
+
+.titleBanner{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#bannerSection .orangeText{
+    font-size: 48px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.descriptionTitle{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFF;
+    padding: 32px 0;
+}
+
+.descriptionTitle strong{
+    font-weight: 700;
+    color: #FBB03B;
+}
+
+
+/* Date Section */
+
+#dateSection{
+    min-height: 917px;
+    background: #1b1c29;
+    padding: 160px 0px;
+}
+
+.dateTitleHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dateTitle{
+    font-family: Nunito Sans;
+    font-style: normal;
+    position: relative;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 100px 89px rgba(255, 255, 255, 0.53), 0px 41.7776px 37.1821px rgba(255, 255, 255, 0.380993), 0px 22.3363px 19.8793px rgba(255, 255, 255, 0.315937), 0px 12.5216px 11.1442px rgba(255, 255, 255, 0.265), 0px 6.6501px 5.91859px rgba(255, 255, 255, 0.214063), 0px 2.76726px 2.46286px rgba(255, 255, 255, 0.149007);
+}
+
+.dateSubTitle{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    color: #FBB03B;
+    padding-bottom: 20px;
+}
+
+.dateDescription{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dateDivHolder{
+    margin-top: 50px;
+    background: #070A11;
+    border-radius: 6px;
+    padding:24px 0px;
+}
+
+.dateDivHolder img{
+    display: flex;
+    width: 100%;
+}
+
+
+/* For Who Section */
+
+#forWhoSection{
+    padding: 160px 0px;
+    background: #090A11;
+    min-height:480px;
+}
+
+#forWhoSection .title{
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+
+.forWhoHolder{
+    display:grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+#forWhoSection ul{
+    color: #fff;
+    list-style-image: url(../img/topicsImage.png);
+}
+
+.line{
+    border-left: 3px solid #FBB03B;
+    height:320px;
+    position: relative;
+}
+
+.text{
+    display: flex;
+}
+
+.text p{
+    padding: 10px 0px 0px 70px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    
+}
+
+.text img{
+    position: relative;
+    left: -25px;
+    background: #090A11;
+    margin-bottom: 30px;
+}
+
+
+/* Thiago Section */
+
+#thiagoSection{
+    /* padding: 80px 0px; */
+    /* background: #090A11;
+    min-height:480px; */
+    background: url(../img/bg_thiago.png) center;
+    background-size: cover;
+    min-height: 740px;
+
+}
+
+#thiagoSection .title{
+    text-align: left;
+}
+
+#thiagoSection .orangeBorder{
+    margin:20px 0px;
+}
+
+#thiagoSection .btnCallToAction{
+    display:none;
+}
+
+/* Bianca Section */
+
+#biancaSection{
+    padding: 160px 0px;
+    background: #090A11;
+    min-height:480px;
+}
+
+#biancaSection .personDescription {
+    margin-bottom: 65px;
+}
+
+#biancaSection .title{
+    text-align: left;
+}
+
+#biancaSection .orangeBorder{
+    margin:20px 0px;
+}
+
+
+
+/* News Section */
+
+#newsSection {
+    padding: 160px 0px;
+    background: #090A11;
+    min-height: 430px;
+}
+
+.newsHolder{
+    padding-top: 64px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+/* Call to Action Section */
+
+#callToActionSection{
+    min-height:886px;
+    /* background: #261b13; */
+    background:url(../img/bg_callAction.png) center , #090A11;
+    background-size: cover;
+    padding: 160px 0px;
+}
+
+.callToActionHolder{
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(50px);
+    border-radius: 6px;
+    padding:120px 0px;
+    text-align: center;
+}
+
+.titleCallToAction{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FBB03B;
+}
+
+.descriptionDateCallToAction{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 0px 40px 0px;
+}
+
+.atentionDiv{
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* Slider Section */
+
+#sliderSection{
+    background: #090a11;
+    padding: 160px 0px;
+    min-height:600px;
+}
+
+.slick-slide{
+    margin: 0px 10px;
+}
+
+.slick-prev {
+    right: 300px;
+    left: unset;
+} 
+.slick-next{
+    right: 220px;
+}
+
+.slick-prev , .slick-next{
+    top: -10%;
+    width: 48px;
+    height: 48px;
+}
+
+.slick-list{padding:0 10% 0 0 !important;}
+
+/* Footer Section */
+
+#footerSection{
+    min-height: 120px;
+    background: #000000;
+    padding: 60px 0px;
+}
+
+#footerSection p{
+    text-align:center;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+#footerSection .copirightText{
+    float: right;
+}
+
+.holderFooter{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#logoFooterMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .holderFooter{
+        grid-template-columns: auto ;
+    }
+
+    #logoFooterMobile{
+        display: flex;
+        margin: 0 auto;
+        padding: 30px 0px;
+    }
+
+    #logoFooter{
+        display: none;
+    }
+
+    .forWhoHolder{
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .text p{
+        font-size: 16px;
+        padding: 10px 0px 0px 16px;
+    }
+
+    .line{
+        margin-left: 16px;
+    }
+
+    #forWhoSection{
+        padding: 76px 0px 140px 0px;
+    }
+
+    .forWhoHolder .title br{
+        display:none;
+    }
+
+    #bannerSection .counterHolder{
+        display: block;
+    }
+
+    .numberCounter{
+        font-size:40px;
+        gap:0px;
+    }
+
+    .textCounter{
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    .atentionDiv{
+        padding-bottom: 90px;
+    }
+
+    #bannerMobile{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .title{
+        font-size:20px
+    }
+
+    .descriptionTitle br{
+        display:none;
+    }
+    
+    .orangeText{
+        font-size:20px
+    }
+
+    #logoHeader{
+        display:flex;
+        margin: auto;
+    }
+
+    #headerSection .counterHolder{
+        display:none;
+    }
+
+    #bannerSection{
+        background:#090A11;
+        min-height:550px;
+        padding: 16px 0px 64px 0px;
+    }
+
+    .subTitleBanner{
+        font-size: 16px;
+    }
+
+    .descriptionDateCallToAction{
+        font-size: 14px;
+    }
+    
+    .titleBanner{
+        font-size: 24px;
+    }
+
+    #bannerSection .orangeText{
+        font-size: 24px;
+    }
+
+    .descriptionTitle{
+        font-size: 16px;
+    }
+
+    .atentionDiv{
+        font-size: 12px;
+    }
+
+    .btnCallToAction{
+        font-size: 16px;
+        display:block;
+        padding:17px 0px;
+    }
+
+    .counterHolder{
+        display: unset;
+        float: unset;
+        text-align: center;
+    }
+
+    .headerText{
+        display: unset;
+    }
+
+    .headerText{
+        font-size: 16px;
+    }
+
+    #dateSection{
+        padding: 61px 0px 43px 0px;
+    }
+
+    .dateTitleHolder{
+        display:block;
+        text-align: center;
+    }
+
+    .dateTitleHolder img{
+        padding-bottom: 30px;
+    }
+
+    .dateTitle{
+        font-size: 28px;
+    }
+
+    .dateSubTitle{
+        font-size: 18px;
+    }
+
+    .dateDescription{
+        font-size: 16px;
+        padding: 0px 30px ;
+    }
+
+    #thiagoSection{
+        background: url(../img/bg_thiagoMobile.png) , #090A11;
+        min-height:unset;
+        padding: 64px 0px;
+    }
+
+    #thiagoSection .btnCallToAction{
+        display:block;
+    }
+
+    #thiagoSection .personDescription{
+        padding-bottom: 32px;
+    }
+
+    .personDescription{
+        font-size: 16px;
+    }
+
+    #biancaSection{
+        display: none;
+    }
+
+    #newsSection{
+        padding: 64px 0px;
+    }
+
+    .newsHolder{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .titleCallToAction{
+        font-size: 32px;
+    }
+
+    #callToActionSection{
+        padding: 128px 0px;
+        min-height:470px;
+    }
+
+    #callToActionSection .descriptionDateCallToAction{
+        font-size: 20px;
+    }
+
+    #callToActionSection .atentionDiv{
+        font-size: 16px;
+    }
+
+    .callToActionHolder {
+        background: unset;
+        box-shadow: unset;
+        backdrop-filter: unset;
+        padding:unset;
+    }
+
+    .slick-next{
+        right: 5px;
+    }
+
+    .slick-prev{
+        left: 5px;
+    }
+
+    .slick-prev, .slick-next {
+        top: -10%;
+        width: 18px;
+        height: 18px;
+    }
+
+    #sliderSection{
+        min-height:unset;
+        padding:100px 0px 40px 0px;
+    }
+   
+    .personHolder{
+        grid-template-columns: auto;
+    }
+
+    .bannerGrid{
+        grid-template-columns: auto;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    .text p {
+        font-size: 13px;
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+
+    .holderFooter{
+        grid-template-columns: auto ;
+    }
+
+    #logoFooterMobile{
+        display: flex;
+        margin: 0 auto;
+        padding: 30px 0px;
+    }
+
+    #logoFooter{
+        display: none;
+    }
+
+    #footerSection .copirightText{
+        float: unset;
+    }
+
+    .forWhoHolder{
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .forWhoHolder .title br{
+        display:none;
+    }
+
+    .text p{
+        padding: 10px 0px 0px 0px;
+        font-size: 18px;
+    }
+
+    #bannerMobile{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #bannerSection .counterHolder{
+        display: block;
+    }
+
+    .numberCounter{
+        font-size:40px;
+        gap:0px;
+    }
+
+    .textCounter{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .atentionDiv{
+        padding-bottom: 90px;
+    }
+
+    .bannerGrid{
+        grid-template-columns: auto;
+    }
+
+    .title{
+        font-size:30px
+    }
+
+    .personHolder{
+        grid-template-columns: auto;
+    }
+
+    .dateDivHolder img{
+        width: unset;
+        margin: 0 auto;
+    }
+    
+    .orangeText{
+        font-size:30px
+    }
+
+    #logoHeader{
+        display:flex;
+        margin: auto;
+    }
+
+    #headerSection .counterHolder{
+        display:none;
+    }
+
+    #bannerSection{
+        background:#090A11;
+        min-height:550px;
+        padding: 16px 0px 64px 0px;
+    }
+
+    .descriptionDateCallToAction{
+        font-size: 18px;
+    }
+    
+    .titleBanner{
+        font-size: 40px;
+    }
+
+    #bannerSection .orangeText{
+        font-size: 40px;
+    }
+
+    .counterHolder{
+        display: unset;
+        float: unset;
+        text-align: center;
+    }
+
+    .headerText{
+        display: unset;
+    }
+
+    #dateSection{
+        padding: 61px 0px 43px 0px;
+    }
+
+    .dateTitleHolder{
+        display:block;
+        text-align: center;
+    }
+
+    .dateTitleHolder img{
+        padding-bottom: 30px;
+    }
+
+    .dateTitle{
+        font-size: 28px;
+    }
+
+    .dateSubTitle{
+        font-size: 18px;
+    }
+
+    .dateDescription{
+        font-size: 16px;
+        padding: 0px 30px ;
+    }
+
+
+    #dateSection {
+        min-height:unset
+    }
+
+    #thiagoSection{
+        min-height:unset;
+        padding: 64px 0px;
+        background-position-x: 1100px;
+    }
+
+    #thiagoSection .btnCallToAction{
+        display:block;
+    }
+
+    #thiagoSection .personDescription{
+        padding-bottom: 32px;
+    }
+
+    .personDescription{
+        font-size: 16px;
+    }
+
+    #biancaSection{
+        display: none;
+    }
+
+    #newsSection{
+        padding: 64px 0px;
+    }
+
+    .newsHolder{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .titleCallToAction{
+        font-size: 32px;
+    }
+
+    #callToActionSection{
+        padding: 128px 0px;
+        min-height:470px;
+    }
+
+    #callToActionSection .descriptionDateCallToAction{
+        font-size: 20px;
+    }
+
+    #callToActionSection .atentionDiv{
+        font-size: 16px;
+    }
+
+    .callToActionHolder {
+        background: unset;
+        box-shadow: unset;
+        backdrop-filter: unset;
+        padding:unset;
+    }
+
+    .slick-next{
+        right: 5px;
+    }
+
+    .slick-prev{
+        left: 5px;
+    }
+
+    .slick-prev, .slick-next {
+        top: -10%;
+        width: 30px;
+        height: 30px;
+    }
+
+    #sliderSection{
+        min-height:unset;
+        padding:100px 0px 40px 0px;
+    }
+   
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+    .holderFooter{
+        grid-template-columns: auto ;
+    }
+
+    #logoFooterMobile{
+        display: flex;
+        margin: 0 auto;
+        padding: 30px 0px;
+    }
+
+    #logoFooter{
+        display: none;
+    }
+
+    #footerSection .copirightText{
+        float: unset;
+    }
+
+    .forWhoHolder{
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .forWhoHolder .title br{
+        display:none;
+    }
+
+    .text p{
+        padding: 10px 0px 0px 0px;
+        font-size: 18px;
+    }
+
+    #bannerSection .counterHolder{
+        display: block;
+    }
+
+    #bannerSection .counterHolder{
+        display: block;
+    }
+
+    .headerText{
+        display:unset;
+    }
+
+    #counterDiv{
+        padding-top: 10px;
+    }
+
+    .numberCounter{
+        font-size:40px;
+        gap:0px;
+    }
+
+    .textCounter{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .atentionDiv{
+        padding-bottom: 40px;
+    }
+
+    .counterHolder{
+        float: unset;
+    }
+
+    #bannerMobile{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .bannerGrid{
+        grid-template-columns: auto;
+    }
+
+    #bannerSection{
+        background:#090A11;
+        min-height:550px;
+        padding: 16px 0px 64px 0px;
+    }
+
+    #headerSection .counterHolder{
+        display:none;
+    }
+
+    .dateTitle{
+        font-size: 30px;
+    }
+
+    #thiagoSection{
+        background: url(../img/bg_thiago.png) right;
+        background-size: cover;
+        background-position-x: 1100px;
+    }
+
+    .personHolder{
+        grid-template-columns: auto;
+    }
+
+    #thiagoSection .btnCallToAction{
+        display:block;
+    }
+
+    #thiagoSection .personDescription{
+        padding-bottom: 32px;
+    }
+
+    #sliderSection{
+        min-height:unset;
+        padding:120px 0px;
+    }
+
+    .slick-next{
+        right: 5px;
+    }
+
+    .slick-prev{
+        left: 5px;
+    }
+
+    .slick-prev, .slick-next {
+        top: -10%;
+        width: 30px;
+        height: 30px;
+    }
+
+    #dateSection{
+        min-height:unset;
+        padding:100px 0px;
+    }
+
+    #biancaSection{
+        display: none;
+    }
+
+    #newsSection {
+        padding: 120px 0px;
+    }
+
+    #callToActionSection .btnCallToAction{
+        display:unset;
+        padding: 17px 60px;
+    }
+
+    #logoHeader{
+        display:flex;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+
+    .text p {
+        padding: 10px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .personHolder {
+        grid-template-columns: 80% 20%;
+    }
+    
+    .btnCallToAction{
+        padding: 17px 40px;
+    }
+
+    .slick-next {
+        right: 100px;
+    }
+
+    .slick-prev {
+        right: 200px;
+    }
+
+    .titleBanner{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1201px) {
+    .text p {
+        padding: 10px 0px 0px 0px;
+    }
+
+}
+
+
+
+
+
